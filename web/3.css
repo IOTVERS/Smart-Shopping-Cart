@@ -1,0 +1,88 @@
+body{
+    height: 1000px;
+    padding: 0px;
+    margin: 0px;
+    background: url("../vs6.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+#logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    border: 2px solid rgb(167, 0, 245);
+    background-color: rgb(12, 12, 19);
+    border-radius: 20px;
+}
+.navbar li a{
+    display: flex;
+text-decoration: none;
+    color: white;
+    font-size: 18px;
+
+}
+li a{
+    padding: 8px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.nav:hover{
+    border-radius: 20px;
+    background-color: rgb(167, 0, 245);
+    color: black;
+}
+
+#btn{
+    list-style: none;
+}
+.btn{
+    background-color: black;
+    list-style: none;
+    border: 2px solid rgb(167, 0, 245);
+    border-radius: 20px;
+    padding: 4px;
+    margin: 6px;
+    margin-left: -20px
+}
+.btn:hover{
+    background-color: rgb(167, 0, 245);
+}
+.btn a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: none;
+    border: none;
+}
+h1{
+    margin-top: 0px;
+    text-align: center;
+justify-content: center;
+    color: white;
+    text-shadow: 20px -8px 5px black;
+}
+
+.p{
+    background: linear-gradient(135deg,  #ff006a, #16ebd7);
+    padding: 20px;
+   border-radius: 20px;
+}
+p{
+    border-radius: 20px;
+    padding: 10px;
+    background:linear-gradient(-45deg, orange, yellow, orange, yellow);
+    box-shadow: 15px -15px 20px gray;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}

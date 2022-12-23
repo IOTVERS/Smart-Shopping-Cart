@@ -16,10 +16,10 @@ MFRC522 mfrc522(SS_PIN, RST_PIN);
 // Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
  
-i1 = "Maggi"
-r1 = "45rs"
-i2 = "Lays"
-r2 = "20rs"
+i1 = "Maggi";
+r1 = "45rs";
+i2 = "Lays";
+r2 = "20rs";
 
 void setup() 
 {
@@ -79,7 +79,8 @@ void loop()
     display.setTextColor(WHITE);
     display.setCursor(0, 10);
     // Display static text
-    display.println(i1 +" \n " + r1);
+    display.println(i1);
+    display.println(r1);
     display.display();
     display.clearDisplay();
     delay(1000);
@@ -93,7 +94,8 @@ void loop()
     display.setTextColor(WHITE);
     display.setCursor(0, 10);
     // Display static text
-    display.println(i2 +" \n " + r2);
+    display.println(i2);
+    display.println(r2);
     display.display();
     display.clearDisplay();
     delay(1000);

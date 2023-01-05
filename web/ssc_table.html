@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produst Detiles</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url(../15.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+        #logo img{
+            width: 100px;
+            height: 70px;
+            border-radius: 40px;
+            margin-top: 10px;
+        }
+        
+        
+        
+        .navbar{
+            list-style: none;
+            display: flex;
+            border: 2px solid rgb(167, 0, 245);
+            background-color: rgb(12, 12, 19);
+            border-radius: 20px;
+        }
+        .navbar li a{
+            display: flex;
+        text-decoration: none;
+            color: white;
+            font-size: 18px;
+        
+        }
+        li a{
+            padding: 8px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .nav:hover{
+            border-radius: 20px;
+            background-color: rgb(167, 0, 245);
+            color: black;
+        }
+        
+        #btn{
+            list-style: none;
+        }
+        .btn{
+            background-color: black;
+            list-style: none;
+            border: 2px solid rgb(167, 0, 245);
+            border-radius: 20px;
+            padding: 4px;
+            margin: 6px;
+            margin-left: -20px
+        }
+        .btn:hover{
+            background-color: rgb(167, 0, 245);
+        }
+        .btn a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background: none;
+            border: none;
+        }
+        #table{
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        table, th, td{
+            border: 1px solid black;
+        }
+        table{
+            backdrop-filter: blur(30px);
+            border-radius:20px ;
+            padding: 10px;
+            margin: 100px;
+            box-shadow: 0px 7px 20px 0px rgb(0 0 0);
+        }
+        td{
+            padding: 10px 100px 10px 100px;
+        }
+        h1{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="1.html"><img src="../15.png" alt="Img error" class="img1
+                "></a>
+        </div>
+        <div id="nav">
+            <ul class="navbar">
+                <li class="nav"><a href="1.html" target="_self">HOME</a></li>
+                <li class="nav"><a href="2.html" target="_self">WORKING</a></li>
+                <li class="nav"><a href="3.html" target="_self">BENEFITS</a></li>
+                <li class="nav"><a href="au.html" target="_self">ABOUT US</a></li>
+            </ul>
+        </div>
+        <div id="right">
+            <ul id="btn">
+                <li class="btn"><a href="https://instagram.com/iotvers?igshid=YmMyMTA2M2Y=">instagram</a></li>
+                <li class="btn"><a href="https://youtube.com">youtube</a></li>
+            </ul>
+        </div>
+    </header>
+    <h1>Produst Detiles</h1>
+    <div id="table">
+    <table>
+        <tr>
+            <td>S No.</td>
+            <td>Products</td>
+            <td>Price</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Maggi</td>
+            <td>45rs</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>chips</td>
+            <td>20rs</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>All</td>
+            <td>65rs</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

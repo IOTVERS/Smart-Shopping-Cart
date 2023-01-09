@@ -121,8 +121,8 @@
         </div>
     </header>
     <h1>Produst Detiles</h1>
-    <div id="table">
-    <table>
+    <div id="table" class="container mt">
+    <table class="table">
         <thead>
         <tr>
             <td>S No.</td>
@@ -165,9 +165,9 @@ var tbody=document.getElementById('tbody1');
 
 function AdditemToTable(Products,Price){
     let trow=document.createElement("trow");
-    iet td1=document.createElement('td');
-    iet td2=document.createElement('td');
-    iet td3=document.createElement('td');
+    let td1=document.createElement('td');
+    let td2=document.createElement('td');
+    let td3=document.createElement('td');
 
     td1.innerHTML=++stdNo;
     td2.innerHTML=++Products;
@@ -180,7 +180,27 @@ function AdditemToTable(Products,Price){
 
 }
 
-function AddItemsToTable()
+function AddItemsToTable(TheStudent){
+    stdNo=0;
+    tbody.innerHTML="";
+    TheStudent.forEach(element=>{
+        AdditemToTable(element.nameofstd,element.product,element.price);
+    })
+}
+function GetAllDataOnce(){
+    const dbRef = ref(db);
+    get((dbRef,items))
+    .then((snapshot)=>{
+        var items=[];
+        snapshot.forEach(childSnapshot=>{
+items.push(childSnapshot.val());
+        });
+        AddItemsToTable(items);
+    })
+}
+
+window.onload=GetAllDataOnce;
+
     </script>
 </body>
 </html>

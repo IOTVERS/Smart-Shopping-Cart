@@ -9,7 +9,7 @@
         body{
             margin: 0px;
             padding: 0px;
-            background: url(../15.png);
+            background: url(15.png);
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -123,11 +123,14 @@
     <h1>Produst Detiles</h1>
     <div id="table">
     <table>
+        <thead>
         <tr>
             <td>S No.</td>
             <td>Products</td>
             <td>Price</td>
         </tr>
+    </thead>
+    <tbody id="tbody1">
         <tr>
             <td>1</td>
             <td>Maggi</td>
@@ -143,6 +146,7 @@
             <td>All</td>
             <td>65rs</td>
         </tr>
+    </tbody>
     </table>
 </div>
     <script>
@@ -155,6 +159,28 @@ admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://smart-shopping-cart-a1285-default-rtdb.firebaseio.com"
 });
+
+var stdNo=0;
+var tbody=document.getElementById('tbody1');
+
+function AdditemToTable(Products,Price){
+    let trow=document.createElement("trow");
+    iet td1=document.createElement('td');
+    iet td2=document.createElement('td');
+    iet td3=document.createElement('td');
+
+    td1.innerHTML=++stdNo;
+    td2.innerHTML=++Products;
+    td3.innerHTML=++Price;
+    trow.appendChild(td1);
+    trow.appendChild(td2);
+    trow.appendChild(td3);
+
+    tbody.appendChild(trow);
+
+}
+
+function AddItemsToTable()
     </script>
 </body>
 </html>

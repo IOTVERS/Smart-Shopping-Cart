@@ -11,7 +11,7 @@ header{
     justify-content: space-between;
 }
 #logo img{
-    width: 80px;
+    /* width: 80px; */
     height: 80px;
     border-radius: 40px;
     margin-top: 10px;
@@ -20,6 +20,7 @@ header{
 
 
 .navbar{
+    padding: 15px;
     list-style: none;
     display: flex;
     border: 2px solid rgb(167, 0, 245);
@@ -32,6 +33,10 @@ text-decoration: none;
     color: white;
     font-size: 18px;
 
+}
+.navbar li:nth-child(1) a{
+    border-bottom: 2px solid rgb(167, 0, 245);
+    border-top: 2px solid rgb(167, 0, 245);
 }
 li a{
     padding: 8px;
@@ -74,17 +79,23 @@ justify-content: center;
 }
 
 .p{
-    background: linear-gradient(135deg,  #ff006a, #16ebd7);
+    /* background: linear-gradient(135deg,  #ff006a, #16ebd7); */
+    backdrop-filter: blur(40px);
     padding: 20px;
    border-radius: 20px;
 }
 p{
     border-radius: 20px;
     padding: 10px;
-    background:linear-gradient(-45deg, orange, yellow, orange, yellow);
-    box-shadow: 15px -15px 20px gray;
+    /* background:linear-gradient(-45deg, orange, yellow, orange, yellow); */
+    box-shadow:inset 0px 0px 20px white;
     font-size: 30px;
     text-align: center;
     justify-content: center;
     color: white;
+}
+#ssc{
+    position: fixed;
+    top: 200px;
+    left: 20px;
 }

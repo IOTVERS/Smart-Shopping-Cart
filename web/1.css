@@ -2,7 +2,7 @@ body{
     height: 1000px;
     padding: 0px;
     margin: 0px;
-    background: url("../vs6.webp");
+    background: url("/img/vs6.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -94,7 +94,9 @@ p{
     justify-content: center;
     color: white;
 }
-#ssc{
+.ssc{
+    padding: 0px ;
+    background-color: white;
     position: fixed;
     top: 200px;
     left: 20px;

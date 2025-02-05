@@ -115,7 +115,7 @@ display.setTextSize(1);
     display.println("You  can't  Buy  this item!");
     display.display();
     display.clearDisplay();
-    delay(1000);
+    delay(2000);
     //delay(3000);
   }
 }

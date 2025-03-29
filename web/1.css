@@ -98,6 +98,11 @@ p{
     padding: 0px ;
     background-color: white;
     position: fixed;
-    top: 200px;
+    top: 800px;
     left: 20px;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
 }

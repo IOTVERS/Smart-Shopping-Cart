@@ -96,3 +96,9 @@ The provided code has the following main functionalities:
 - **Payment Integration**: Integrate a payment system to enable automatic billing.
 - **Mobile App**: Create a mobile app that syncs with the cart for real-time updates on the items added.
 
+## Cart Table 
+![image](https://github.com/user-attachments/assets/011c64ae-c118-4bd0-9dae-e6b4d3499afa)
+
+
+## Team 
+![image](https://github.com/user-attachments/assets/b0c0f73c-d29b-442d-8669-2a568069b19b)
